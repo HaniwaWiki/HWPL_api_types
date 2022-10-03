@@ -1,9 +1,9 @@
-import { GachaProbability } from './GachaProbability';
-import { GachaConvertedProbability } from './GachaConvertedProbability';
-import { GachaRarityProbability } from './GachaRarityProbability';
-import { GachaConvertedRarityProbability } from './GachaConvertedRarityProbability';
-import { GachaConvertedPremiumRarityProbability } from './GachaConvertedPremiumRarityProbability';
-import { GachaConvertedPremiumProbability } from './GachaConvertedPremiumProbability';
+import { GachaProbability } from '../GachaProbability';
+import { GachaConvertedProbability } from '../GachaConvertedProbability';
+import { GachaRarityProbability } from '../GachaRarityProbability';
+import { GachaConvertedRarityProbability } from '../GachaConvertedRarityProbability';
+import { GachaConvertedPremiumRarityProbability } from '../GachaConvertedPremiumRarityProbability';
+import { GachaConvertedPremiumProbability } from '../GachaConvertedPremiumProbability';
 
 // type of /HWPL_Data/api/extra/GachaProbability/{version}.json
 export type GachaProbabilityPack = {

@@ -1,0 +1,28 @@
+export type Merchandise = {
+  Id: number;
+  Name: string;
+  Description: string;
+  PackIconImage: string;
+  InputHoneyDiamondCategory: number;
+  InputHoneyDiamondCount: number;
+  Input1ItemId: number;
+  Input1ItemCount: number;
+  Input2ItemId: null;
+  Input2ItemCount: null;
+  Input3ItemId: null;
+  Input3ItemCount: null;
+  Input4ItemId: null;
+  Input4ItemCount: null;
+  Input5ItemId: null;
+  Input5ItemCount: null;
+  Output1ItemId: number;
+  Output1ItemCount: number;
+  Output2ItemId: number;
+  Output2ItemCount: number;
+  Output3ItemId: number;
+  Output3ItemCount: number;
+  Output4ItemId: number;
+  Output4ItemCount: number;
+  Output5ItemId: number;
+  Output5ItemCount: number;
+};

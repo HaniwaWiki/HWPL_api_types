@@ -1,0 +1,25 @@
+export type CharacterCard = {
+  Id: number;
+  CharacterId: number;
+  Name: string;
+  Description: string;
+  Rarity: number;
+  Type: number;
+  TagIdBits: string;
+  InitialTap: number;
+  MaxTapRank1: number;
+  MaxTapRank2: number;
+  InitialTech: number;
+  MaxTechRank1: number;
+  MaxTechRank2: number;
+  InitialKyunKyun: number;
+  MaxKyunKyunRank1: number;
+  MaxKyunKyunRank2: number;
+  LevelCoefficientId: number;
+  SkillId: number;
+  CharacterCardRankUpItemSetId: number;
+  FirstSceneCardId: number;
+  RankUpSceneCardId: number;
+  MusicPartId: number;
+  CanUseSkillLevelUpItem: number;
+};

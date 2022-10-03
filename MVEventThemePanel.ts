@@ -1,0 +1,23 @@
+export type MVEventThemePanel = {
+  Id: number;
+  MVEventThemePanelSetId: number;
+  Number: number;
+  Name: string;
+  Description: string;
+  NecessaryCountType: number;
+  NecessaryCount: number;
+  Trigger1: number;
+  Trigger1Arg1: number;
+  Trigger1Arg2: number;
+  Trigger1Arg3: null;
+  Trigger2: number;
+  Trigger2Arg1: number;
+  Trigger2Arg2: number;
+  Trigger2Arg3: null;
+  RewardItem1Id: number;
+  RewardItem1Count: number;
+  RewardItem2Id: null;
+  RewardItem2Count: null;
+  RewardItem3Id: null;
+  RewardItem3Count: null;
+};

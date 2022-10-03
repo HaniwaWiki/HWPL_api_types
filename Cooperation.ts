@@ -1,0 +1,20 @@
+export type Cooperation = {
+  Id: number;
+  Name: string;
+  Description: string;
+  MusicPartId: number;
+  Rank: number;
+  DisplayOrderPriority: number;
+  SkillId: number;
+  ClassId: number;
+  Arg1: number;
+  Arg2: number;
+  Arg3: number;
+  Arg4: number;
+  Arg5: number;
+  Arg6: number;
+  Arg7: null;
+  Arg8: null;
+  Arg9: null;
+  Arg10: null;
+};

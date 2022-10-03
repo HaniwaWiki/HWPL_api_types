@@ -1,0 +1,20 @@
+export type CoupleStoryEpisode = {
+  Id: number;
+  CoupleStoryId: number;
+  Number: number;
+  Title: string;
+  StartAt: number;
+  TicketCount: number;
+  BonusItem1Id: number;
+  BonusItem1Count: number;
+  BonusItem2Id: number;
+  BonusItem2Count: number;
+  BonusItem3Id: number;
+  BonusItem3Count: number;
+  BonusItem4Id: number;
+  BonusItem4Count: number;
+  BonusItem5Id: number;
+  BonusItem5Count: number;
+  NecessaryMusicPartId: number;
+  NecessaryMusicPartLevel: number;
+};

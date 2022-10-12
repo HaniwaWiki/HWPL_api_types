@@ -2,7 +2,7 @@ export type CharacterCard = {
   Id: number;
   CharacterId: number;
   Name: string;
-  Description: string;
+  Description: null;
   Rarity: number;
   Type: number;
   TagIdBits: string;
@@ -18,8 +18,8 @@ export type CharacterCard = {
   LevelCoefficientId: number;
   SkillId: number;
   CharacterCardRankUpItemSetId: number;
-  FirstSceneCardId: number;
-  RankUpSceneCardId: number;
-  MusicPartId: number;
+  FirstSceneCardId: number | null;
+  RankUpSceneCardId: number | null;
+  MusicPartId: number | null;
   CanUseSkillLevelUpItem: number;
 };

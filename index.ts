@@ -118,6 +118,7 @@ export type CollectionTypeName = {
   CharacterCards: CharacterCard;
   CharacterCardExpItems: CharacterCardExpItem;
   CharacterCardLevelCoefficients: CharacterCardLevelCoefficient;
+  CharacterCardLevelStats: CharacterCardLevelStat;
   CharacterCardRankUpItems: CharacterCardRankUpItem;
   CharacterCardRankUpItemSets: CharacterCardRankUpItemSet;
   CharacterTalks: CharacterTalk;
@@ -212,8 +213,4 @@ export type CollectionTypeName = {
   VoteEventPublicSchedules: VoteEventPublicSchedule;
   VoteEventRankingRewards: VoteEventRankingReward;
   VoteEventTargets: VoteEventTarget;
-};
-
-export type APITypeName = CollectionTypeName & {
-  CharacterCardLevelStats: CharacterCardLevelStat;
 };

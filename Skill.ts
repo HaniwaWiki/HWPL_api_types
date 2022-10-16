@@ -5,7 +5,7 @@ export type Skill = {
   Trigger: number;
   TriggerArg: string;
   Probability: number;
-  Class: number;
+  Class: 1 | 11 | 21 | 31 | 32 | 40 | 41 | 42 | 90;
   Arg1: string;
   Arg2: string;
   Arg3: string;

@@ -3,9 +3,9 @@ export type GachaBox = {
   GachaBoxType: number;
   Name: string;
   Description: string;
-  PickUpItem1Id: number;
-  PickUpItem2Id: number;
-  PickUpItem3Id: number;
+  PickUpItem1Id: number | null;
+  PickUpItem2Id: number | null;
+  PickUpItem3Id: number | null;
   InformationId: number;
   TermId: number;
   DisplayOrderPriority: number;

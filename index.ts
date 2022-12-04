@@ -94,16 +94,11 @@ import { VoteEventRankingReward } from './VoteEventRankingReward';
 import { VoteEventTarget } from './VoteEventTarget';
 import { EventTheaterScenario } from './EventTheaterScenario';
 import { CoupleStoryEpisodeScenario } from './CoupleStoryEpisodeScenario';
-import { GachaRarityProbability } from './GachaRarityProbability';
-import { GachaProbability } from './GachaProbability';
-import { GachaConvertedPremiumProbability } from './GachaConvertedPremiumProbability';
-import { GachaConvertedProbability } from './GachaConvertedProbability';
-import { GachaConvertedRarityProbability } from './GachaConvertedRarityProbability';
 import { GachaInformation } from './GachaInformation';
-import { GachaConvertedPremiumRarityProbability } from './GachaConvertedPremiumRarityProbability';
 import { MVLibraryScenario } from './MVLibraryScenario';
 import { TalkLiveScenario } from './TalkLiveScenario';
 import { CharacterCardLevelStat } from './extra/CharacterCardLevelStat';
+import { GachaProbability, GachaRarityProbability } from '@/types/HWPL/extra/GachaProbabilityPack';
 
 export type CollectionTypeName = {
   Achievements: Achievement;
@@ -147,10 +142,10 @@ export type CollectionTypeName = {
   FanCountTalks: FanCountTalk;
   Gachas: Gacha;
   GachaBoxes: GachaBox;
-  GachaConvertedPremiumProbabilities: GachaConvertedPremiumProbability;
-  GachaConvertedPremiumRarityProbabilities: GachaConvertedPremiumRarityProbability;
-  GachaConvertedProbabilities: GachaConvertedProbability;
-  GachaConvertedRarityProbability: GachaConvertedRarityProbability;
+  GachaConvertedPremiumProbabilities: GachaProbability;
+  GachaConvertedPremiumRarityProbabilities: GachaRarityProbability;
+  GachaConvertedProbabilities: GachaProbability;
+  GachaConvertedRarityProbability: GachaRarityProbability;
   GachaInformations: GachaInformation;
   GachaProbabilities: GachaProbability;
   GachaRarityProbabilities: GachaRarityProbability;

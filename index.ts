@@ -98,7 +98,11 @@ import { GachaInformation } from './GachaInformation';
 import { MVLibraryScenario } from './MVLibraryScenario';
 import { TalkLiveScenario } from './TalkLiveScenario';
 import { CharacterCardLevelStat } from './extra/CharacterCardLevelStat';
-import { GachaProbability, GachaRarityProbability } from '@/types/HWPL/extra/GachaProbabilityPack';
+import {
+  GachaProbability,
+  GachaRarityProbability,
+} from '@/types/HWPL/extra/GachaProbabilityPack';
+import { BannerAssetInfo } from './extra/BannerAssetInfo';
 
 export type CollectionTypeName = {
   Achievements: Achievement;
@@ -107,6 +111,7 @@ export type CollectionTypeName = {
   Albums: Album;
   AlbumLevelCaps: AlbumLevelCap;
   Assets: any;
+  BannerAssetInfo: BannerAssetInfo;
   Awards: Award;
   AwardCategories: AwardCategory;
   Characters: Character;

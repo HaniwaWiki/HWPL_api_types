@@ -2,11 +2,17 @@ import { GachaBox } from '@/types/HWPL/GachaBox';
 import { Event } from '@/types/HWPL/Event';
 
 // ItemSource can be fetched from /api/extra/ItemSource/<ItemId>.json
-export type ItemSource = {
+export class ItemSource {
   ItemId: number;
   EventAchievementRewards: Event[];
   GachaBoxes: GachaBox[];
-};
+
+  constructor(ItemId = 0) {
+    this.ItemId = ItemId;
+    this.EventAchievementRewards = [];
+    this.GachaBoxes = [];
+  }
+}
 
 // pre-computed aggregated information
 // ItemSourceAggregateInformation[] can be fetched from /api/extra/ItemSource/aggregateInformation.json

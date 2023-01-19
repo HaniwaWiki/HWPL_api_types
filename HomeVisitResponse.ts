@@ -1,4 +1,4 @@
-import { Fortune } from '@/types/HWPL/Fortune';
+import { Fortune } from './Fortune';
 
 // response of https://production.arisa-project.net/api/Player/HomeVisit
 export type HomeVisitResponse = {

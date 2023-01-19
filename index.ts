@@ -101,7 +101,7 @@ import { CharacterCardLevelStat } from './extra/CharacterCardLevelStat';
 import {
   GachaProbability,
   GachaRarityProbability,
-} from '@/types/HWPL/extra/GachaProbabilityPack';
+} from './extra/GachaProbabilityPack';
 import { BannerAssetInfo } from './extra/BannerAssetInfo';
 
 export type CollectionTypeName = {

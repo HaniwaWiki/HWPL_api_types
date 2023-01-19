@@ -1,5 +1,5 @@
-import { GachaBox } from '@/types/HWPL/GachaBox';
-import { Event } from '@/types/HWPL/Event';
+import { GachaBox } from '../../GachaBox';
+import { Event } from '../../Event';
 
 // ItemSource can be fetched from /api/extra/ItemSource/<ItemId>.json
 export class ItemSource {

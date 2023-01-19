@@ -1,6 +1,6 @@
 import { ScenarioEventPointRanking } from './ScenarioEventPointRanking';
 
-export type ScenarioEventPointRankingReduced = Pick<
+export type ScenarioEventPointRankingLite = Pick<
   ScenarioEventPointRanking,
   'PlayerId' | 'Name' | 'Rank' | 'Score'
 >;
@@ -8,7 +8,7 @@ export type ScenarioEventPointRankingReduced = Pick<
 // summary of scenario event realtime point ranking
 export type ScenarioEventPointRankingRealtimeSummary = {
   Time: number;
-  Rankings: ScenarioEventPointRankingReduced[];
+  Rankings: ScenarioEventPointRankingLite[];
 };
 
 export type ScenarioEventPointRankingRealtimeSummarySet = {

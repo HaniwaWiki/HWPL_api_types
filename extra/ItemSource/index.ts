@@ -16,7 +16,12 @@ export class ItemSource {
 
 // pre-computed aggregated information
 // ItemSourceAggregateInformation[] can be fetched from /api/extra/ItemSource/aggregateInformation.json
-export type ItemSourceAggregateInformation = {
+export class ItemSourceAggregateInformation {
   ItemId: number;
   ReleaseTimestamp: number | null;
-};
+
+  constructor(ItemId = 0) {
+    this.ItemId = ItemId;
+    this.ReleaseTimestamp = null;
+  }
+}

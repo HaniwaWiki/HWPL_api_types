@@ -7,25 +7,47 @@ import { CoupleStory } from '../../CoupleStory';
 import { TalkLive } from '../../TalkLive';
 import { PlayerLevel } from '../../PlayerLevel';
 import { MusicPart } from '../../MusicPart';
+import { Shop } from '../../Shop';
+import { EventCharacterCard } from '../../EventCharacterCard';
+import { MVEventThemePanel } from '../../MVEventThemePanel';
+import { MVEventThemePanelSet } from '../../MVEventThemePanelSet';
+import { MVLibrary } from '../../MVLibrary';
+import { EventTheater } from '../../EventTheater';
 
 // ItemSource can be fetched from /api/extra/ItemSource/<ItemId>.json
 export class ItemSource {
   ItemId: number;
+  // get enough event points in an event to get rewards
   EventAchievementRewards: Event[];
+  // get character card in gacha!
   GachaBoxes: GachaBox[];
+  // get enough fan count to level up and get rewards
   PlayerLevelRewards: PlayerLevel[];
+  // complete achievements (i.e. quests) to get rewards
   AchievementRewards: Achievement[];
-  MusicPartAchievementThresholds: MusicPart[];
+  // complete achievements (i.e. quests) of music parts to get rewards
+  MusicPartAchievementRewards: MusicPart[];
+  // get enough views of music parts to get rewards
   MusicPartLevelRewards: MusicPart[];
-  // Shop: Shop[];
+  // buy in shop
+  Shop: Shop[];
+  // complete albums to get rewards
   AlbumCompleteRewards: Album[];
-  // todo: EventCharacterCardRewards: EventCharacterCard[]
-  // todo: MVEventThemePanels
-  // todo: MVEventThemePanelSets
+  // not sure
+  EventCharacterCardDrops: EventCharacterCard[];
+  // not sure
+  MVEventThemePanelRewards: MVEventThemePanel[];
+  // not sure
+  MVEventThemePanelSetCompleteRewards: MVEventThemePanelSet[];
+  // buy season road and achieve level to get rewards
   SeasonRoadLevelRewards: SeasonRoad[];
+  // watch couple story episode to get rewards
   CoupleStory: CoupleStory[];
-  EventTheater: Event[];
-  MVLibrary: Event[];
+  // watch event theater episode to get rewards
+  EventTheater: EventTheater[];
+  // watch MV library to get rewards
+  MVLibrary: MVLibrary[];
+  // watch talk live episode to get rewards
   TalkLive: TalkLive[];
 
   constructor(ItemId = 0) {
@@ -34,7 +56,7 @@ export class ItemSource {
     this.GachaBoxes = [];
     this.PlayerLevelRewards = [];
     this.AchievementRewards = [];
-    this.MusicPartAchievementThresholds = [];
+    this.MusicPartAchievementRewards = [];
     this.MusicPartLevelRewards = [];
     this.AlbumCompleteRewards = [];
     this.SeasonRoadLevelRewards = [];

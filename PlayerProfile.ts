@@ -55,18 +55,20 @@ export type PlayerProfile = {
     UpdatedAt: number;
   }[];
   DeckPlayerCharacterCards: {
-    PlayerId: 1970444;
-    CharacterCardId: 1028002;
-    SkillLevel: 1;
-    CreatedAt: 1630642315;
-    UpdatedAt: 1630642315;
+    PlayerId: number;
+    CharacterCardId: number;
+    SkillLevel: number;
+    CreatedAt: number;
+    UpdatedAt: number;
   }[];
   TotalDeckPower: 0;
   PlayerAlbums: [null, null, null];
+  // a array with 6 elements
   LiveRankCounts: number[];
+  // a 4x3 array
   ClearRanks: number[][];
   FriendRelation: number;
   FollowCount: number;
   FollowerCount: number;
-  CompletedPlatinumAlbumIds: [];
+  CompletedPlatinumAlbumIds: number[];
 };

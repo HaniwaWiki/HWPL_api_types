@@ -18,52 +18,40 @@ import { EventTheater } from '../../EventTheater';
 export class ItemSource {
   ItemId: number;
   // get enough event points in an event to get rewards
-  EventAchievementRewards: Event[];
+  EventAchievementRewards: Event[] = [];
   // get character card in gacha!
-  GachaBoxes: GachaBox[];
+  GachaBoxes: GachaBox[] = [];
   // get enough fan count to level up and get rewards
-  PlayerLevelRewards: PlayerLevel[];
+  PlayerLevelRewards: PlayerLevel[] = [];
   // complete achievements (i.e. quests) to get rewards
-  AchievementRewards: Achievement[];
+  AchievementRewards: Achievement[] = [];
   // complete achievements (i.e. quests) of music parts to get rewards
-  MusicPartAchievementRewards: MusicPart[];
+  MusicPartAchievementRewards: MusicPart[] = [];
   // get enough views of music parts to get rewards
-  MusicPartLevelRewards: MusicPart[];
+  MusicPartLevelRewards: MusicPart[] = [];
   // buy in shop
-  Shop: Shop[];
+  Shop: Shop[] = [];
   // complete albums to get rewards
-  AlbumCompleteRewards: Album[];
+  AlbumCompleteRewards: Album[] = [];
   // not sure
-  EventCharacterCardDrops: EventCharacterCard[];
+  EventCharacterCardDrops: EventCharacterCard[] = [];
   // not sure
-  MVEventThemePanelRewards: MVEventThemePanel[];
+  MVEventThemePanelRewards: MVEventThemePanel[] = [];
   // not sure
-  MVEventThemePanelSetCompleteRewards: MVEventThemePanelSet[];
+  MVEventThemePanelSetCompleteRewards: MVEventThemePanelSet[] = [];
   // buy season road and achieve level to get rewards
-  SeasonRoadLevelRewards: SeasonRoad[];
+  SeasonRoadLevelRewards: SeasonRoad[] = [];
   // watch couple story episode to get rewards
-  CoupleStory: CoupleStory[];
+  CoupleStory: CoupleStory[] = [];
   // watch event theater episode to get rewards
-  EventTheater: EventTheater[];
+  EventTheater: EventTheater[] = [];
   // watch MV library to get rewards
-  MVLibrary: MVLibrary[];
+  MVLibrary: MVLibrary[] = [];
   // watch talk live episode to get rewards
-  TalkLive: TalkLive[];
+  TalkLive: TalkLive[] = [];
 
   constructor(ItemId = 0) {
     this.ItemId = ItemId;
-    this.EventAchievementRewards = [];
-    this.GachaBoxes = [];
-    this.PlayerLevelRewards = [];
-    this.AchievementRewards = [];
-    this.MusicPartAchievementRewards = [];
-    this.MusicPartLevelRewards = [];
-    this.AlbumCompleteRewards = [];
-    this.SeasonRoadLevelRewards = [];
-    this.CoupleStory = [];
-    this.EventTheater = [];
-    this.MVLibrary = [];
-    this.TalkLive = [];
   }
 }
 
@@ -71,10 +59,9 @@ export class ItemSource {
 // ItemSourceAggregateInformation[] can be fetched from /api/extra/ItemSource/aggregateInformation.json
 export class ItemSourceAggregateInformation {
   ItemId: number;
-  ReleaseTimestamp: number | null;
+  ReleaseTimestamp: number | null = null;
 
   constructor(ItemId = 0) {
     this.ItemId = ItemId;
-    this.ReleaseTimestamp = null;
   }
 }

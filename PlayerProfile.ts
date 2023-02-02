@@ -1,48 +1,50 @@
+export type PlayerStatus = {
+  PlayerId: number;
+  State: number;
+  Level: number;
+  Exp: number;
+  FanCount: number;
+  Name: string;
+  Birthday: string | null;
+  ConstellationId: number;
+  AgeConfirmationBirthday: string | null;
+  Comment: string;
+  ContinuousLoginDays: number;
+  TotalLoginDays: number;
+  LastLoginedAt: number;
+  FavoriteCharacterCardId: number;
+  PublishSettingUserId: number;
+  PublishSettingDeckTotal: number;
+  PublishSettingBirthday: number;
+  PublishSettingMusicPartLevelRank: number;
+  PublishSettingLastLoginedAt: number;
+  PublishSettingClearMusicPartCount: number;
+  PublishSettingPlayerRecord: number;
+  ClientData: string;
+  RecoverHeartWithADDailyCount: number;
+  LastRecoverHeartWithHomeADAt: number;
+  LastRecoverHeartWithShortageDialogADAt: number;
+  LastSendHoneyDiamondWithADAt: number;
+  DailyHeartCount: number;
+  DailyAutoPlayCount: number;
+  DailyAutoTicketPlayCount: number;
+  LastAutoPlayedAt: number;
+  MaxTotalDeckPower: number;
+  MaxScoreInAllMusic: number;
+  UserPolicyRevision: number;
+  UserPolicyUpdateAt: number;
+  AwardItemId1: number;
+  AwardItemId2: number;
+  AwardItemId3: number;
+  TwitterId: string | null;
+  WatchEventTheaterWithADDailyCount: number;
+  LastWatchEventTheaterWithADAt: number;
+  CreatedAt: number;
+  UpdatedAt: number;
+};
+
 export type PlayerProfile = {
-  PlayerStatus: {
-    PlayerId: number;
-    State: number;
-    Level: number;
-    Exp: number;
-    FanCount: number;
-    Name: string;
-    Birthday: null;
-    ConstellationId: number;
-    AgeConfirmationBirthday: null;
-    Comment: string;
-    ContinuousLoginDays: number;
-    TotalLoginDays: number;
-    LastLoginedAt: number;
-    FavoriteCharacterCardId: number;
-    PublishSettingUserId: number;
-    PublishSettingDeckTotal: number;
-    PublishSettingBirthday: number;
-    PublishSettingMusicPartLevelRank: number;
-    PublishSettingLastLoginedAt: number;
-    PublishSettingClearMusicPartCount: number;
-    PublishSettingPlayerRecord: number;
-    ClientData: string;
-    RecoverHeartWithADDailyCount: number;
-    LastRecoverHeartWithHomeADAt: number;
-    LastRecoverHeartWithShortageDialogADAt: number;
-    LastSendHoneyDiamondWithADAt: number;
-    DailyHeartCount: number;
-    DailyAutoPlayCount: number;
-    DailyAutoTicketPlayCount: number;
-    LastAutoPlayedAt: number;
-    MaxTotalDeckPower: number;
-    MaxScoreInAllMusic: number;
-    UserPolicyRevision: number;
-    UserPolicyUpdateAt: number;
-    AwardItemId1: number;
-    AwardItemId2: number;
-    AwardItemId3: number;
-    TwitterId: null;
-    WatchEventTheaterWithADDailyCount: number;
-    LastWatchEventTheaterWithADAt: number;
-    CreatedAt: number;
-    UpdatedAt: number;
-  };
+  PlayerStatus: PlayerStatus;
   PlayerIdForDisplay: string;
   DeckIndividualCharacterCards: {
     Id: number;
@@ -71,4 +73,28 @@ export type PlayerProfile = {
   FollowCount: number;
   FollowerCount: number;
   CompletedPlatinumAlbumIds: number[];
+};
+
+export type PlayerState = {
+  PlayerStatus: PlayerStatus;
+  PlayerTutorial: {
+    PlayerId: number,
+    TutorialSceneType: number,
+    TutorialState: number,
+    CreatedAt: number,
+    UpdatedAt: number,
+  }[];
+  Heart: {
+    PlayerId: number,
+    ElapsedTimeRecoveringPointId: number,
+    BaseCount: number,
+    BaseRecoveredAt: number,
+    CreatedAt: number,
+    UpdatedAt: number,
+  },
+  PaidHoneyDiamondCount: number,
+  FreeHoneyDiamondCount: number,
+  UpdateUserPolicy: boolean,
+  Code: number,
+  Message: string | null,
 };
